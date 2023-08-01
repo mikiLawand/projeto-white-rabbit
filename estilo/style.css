@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: AntiqueWonders;
+    src: url('../fontes/AntiqueWonders\ Free.ttf') format('TrueType');
+}
+
+
+:root{
+  --corRosaShock: #F2508B;
+  --corRosaClaro: #F2C2D8;
+  --corRoxo: #5061BF;
+  --corAzulEscuro: #3C4973;
+  --corBranco: #FEEFEA;
+
+  --fonteDestaque: 'AntiqueWonders';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:var(--corRoxo);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: var(--corRosaClaro);
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: var(--corRosaShock);
+    font-family:var(--fonteDestaque);
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.144);
+    font-size: 55px;
+}
+
+header > p{
+    color: var(--corRosaShock);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width:500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.105);
+}
+
+nav{
+    background-color:var(--corRosaClaro);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.112);
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+
+nav > a{
+    text-decoration: none;
+    color:var(--corRosaShock);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--corRosaShock);
+    color: var(--corRosaClaro);
+}
+
+main{
+    background-color: var(--corBranco);
+    margin-top: 20px;
+    border-radius: 15px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+
+main h1{
+    color: var(--corRoxo);
+    font-family: var(--fonteDestaque);
+    text-indent: 10px;
+    padding-top: 10px;
+}
+
+article > p{
+    margin: 20px 0px;
+    text-align: justify;
+    text-indent: 15px;
+    padding: 0px 10px 10px 10px;
+}
+
+footer{
+    background-color:var(--corRosaClaro);
+    color:var(--corRosaShock);
+    text-align: center;
+}
