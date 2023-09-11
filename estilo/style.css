@@ -6,6 +6,9 @@
     src: url('../fontes/AntiqueWonders\ Free.ttf') format('TrueType');
 }
 
+/*importando a fonte de corpo*/
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
 /*configurações gerais*/
 :root{
 
@@ -18,6 +21,7 @@
 
   /*fonte de destaque*/
   --fonteDestaque: 'AntiqueWonders';
+  --fonteCorpo: 'Prata', 'serif';
 }
 
 *{
@@ -29,7 +33,7 @@ body{
 
     /*ajustando a imagem de fundo*/
     background-color:white;
-    background-image: url('../imagens/fundo-rosa.png');
+    background-image: url('../imagens/fundo-azul.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -45,12 +49,12 @@ header > h1{
     background-color: #FEEFEA;
     font-family: var(--fonteDestaque);
     font-size: 3.5em;
-    color:#1700D1;
+    color: #F2508B;
     padding-bottom: 30px;
 }
 
 nav{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--fonteCorpo);
     background-color: #FEEFEA;
     padding-bottom: 15px;
 }
@@ -58,9 +62,111 @@ nav{
 nav > a{
     text-decoration: none;
     background-color: #F2C2D8;
-    border-radius: 30px;
-    margin-right: 8px;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
+    color: #F2508B;
+    border-radius: 20px;
+    margin-right: 3px;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 7px;
 }
+
+main{
+    background-color: #FEEFEA;
+    width: 70vw;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.container{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.article{
+    flex: 1;
+}
+
+article > h1{
+    padding-bottom: 20px;
+    font-family: var(--fonteDestaque)
+}
+
+article > p{
+font-family: var(--fonteCorpo);
+font-size: 1.1em;
+ text-align: justify;
+ margin-bottom: 20px;
+ text-indent: 15px;
+}
+
+.perfil{
+    flex: 0;
+    width: 250px;
+    background-color: #6DA5F8;
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.perfil img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 6px;
+}
+
+.perfil h2{
+    color: #F2508B;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.perfil p{
+    text-align: justify;
+    margin-bottom: 5px;
+    text-indent: 15px;
+    padding: 5px;
+}
+
+.links-redes{
+    width: 20vw;
+    border-radius: 15px;
+}
+
+.links-redes li{
+    display: inline;
+    margin-right: 10px;
+}
+
+.links-redes a{
+    text-decoration: none;
+    color: #F2508B;
+}
+
+.links-redes img{
+    width: 32px; /* Tamanho desejado para os ícones */
+    height: 32px; /* Tamanho desejado para os ícones */
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+footer{
+    background-color: #F2C2D8;
+    font-family: var(--fonteCorpo);
+    color: #F2508B;
+    height: 27px;
+    margin-top: 15px;
+}
+
+footer > p{
+    text-align: center;
+    font-size: 1.3em;
+}
+
